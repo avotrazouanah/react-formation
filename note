@@ -1,0 +1,85 @@
+Objectif formation:
+    Comprendre bien une Structure de projet basic
+
+Theme:
+    Harry Potter
+    API Rest pour harry potter
+    Lister 
+    Naviguer de manier fluide
+    Gerer les filtre
+    Information en cache
+
+Basic Optimisation:
+    lazy loading, virtualisation (liste pour les données)
+
+
+Regle de codage JS:
+    norme nbn:
+        const et let no ampiasaina fa tsy var
+        norme de codage (mahay implementation, mora vakiana ary performante)
+        simple et efficace
+        new Object() tsy tsara fa {} dia vita
+        fampiasana filter, for(tss bloquant), reduce, map(asynchrone), 
+
+
+common:
+    composant react reutilisé
+
+
+components:
+    ou page
+    liste page:
+        home (liste caracter )
+
+router:
+    navigation
+
+types:
+    type daholo ny donnée rehetra
+
+utilis:
+    utilitaire rehetra 
+    ex: mampiditra token anaty localStorage 
+
+eslintrc:
+    contrainte apetraka dev react amzay tsy libre be ny code fa misy contraite
+
+craco.config.js:
+    outil pour faciliter le web pack dans react
+    @ = './src/' rehefa builder
+
+
+tsconfig.js:
+    auto completion
+    
+
+tsx et ts:
+    tsx rehefa misy jsx  (component)
+    ts rehefa tsy misy balise (other)
+
+pluging:
+    auto close tag
+    auto rename tag
+    env
+    es7+ react/redux/
+    Node.js Extension 
+    npm intellisense
+    Path intellisense
+    prettier
+    material
+
+
+prettier:
+    cote ray ihany no ampiasaina
+    rehefa inona ny tokony midina ala ligne ny code 
+    
+eslintrc:
+    style codage nbn
+    
+
+
+
+
+
+        
+
