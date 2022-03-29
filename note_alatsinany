@@ -21,6 +21,11 @@ Regle de codage JS:
         new Object() tsy tsara fa {} dia vita
         fampiasana filter, for(tss bloquant), reduce, map(asynchrone), 
 
+dossier:
+    common
+    components
+    types
+    utils
 
 common:
     composant react reutilisé
@@ -41,12 +46,13 @@ utilis:
     utilitaire rehetra 
     ex: mampiditra token anaty localStorage 
 
-eslintrc:
+.eslintrc:
     contrainte apetraka dev react amzay tsy libre be ny code fa misy contraite
 
 craco.config.js:
     outil pour faciliter le web pack dans react
-    @ = './src/' rehefa builder
+    utiliser pour modififer le webpack lors du deploiement du projet
+    ex: @/ = './src/' rehefa builder
 
 
 tsconfig.js:
@@ -66,20 +72,16 @@ pluging:
     npm intellisense
     Path intellisense
     prettier
-    material
+    material icon
+    gitLens
 
-
-prettier:
+.prettierrc:
     cote ray ihany no ampiasaina
-    rehefa inona ny tokony midina ala ligne ny code 
+    rehefa inona ny tokony midina à la ligne ny code 
     
-eslintrc:
+.eslintrc:
     style codage nbn
+
     
-
-
-
-
-
-        
-
+api:
+    https://hp-api.herokuapp.com/

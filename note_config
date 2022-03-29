@@ -1,0 +1,18 @@
+config_file: .eslintrc.js
+  .prettierrc.js
+  .vscode/settings.json
+
+install pluggin: EsLint
+  Prettier
+
+api: https://hp-api.herokuapp.com/
+
+norme airbnb: https://github.com/airbnb/javascript
+
+virtilisation: https://github.com/bvaughn/react-virtualized
+
+useMemo: https://grafikart.fr/tutoriels/react-hook-usememo-1330
+
+dev_oriente_composant:
+
+optimisation: https://www.w3schools.com/react/default.asp

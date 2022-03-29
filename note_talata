@@ -1,0 +1,40 @@
+
+talata:
+    creation homePage(au moins 2 components),
+    router
+    axios
+    creation pour gérer les favorites (stocage dans localstorage)
+    sens de detail
+
+
+home:
+    component 2 au moins:
+        presonnage_item
+    
+url:
+    centraliser l'url (constant dans un service)
+    declaration dans un service
+
+load_api:
+    utilisation "loader" 
+
+componsant:
+    atao kely fa parametre no atao bdb
+    ex:
+        item_personnage(home, favorites)
+
+affichage_liste:
+    virtualiser la liste (https://github.com/bvaughn/react-virtualized)
+
+use_memo:
+    manatsara ny performantion ny application
+    tsy averiny rederena ilay izy
+    
+        
+
+
+
+
+
+        
+
