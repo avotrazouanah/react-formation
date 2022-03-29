@@ -1,18 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import App from '../App';
+import { Route, Routes } from 'react-router-dom';
+import Details from '../components/Details';
+import Favorite from '../components/Favorite';
 import Home from '../components/Home';
 
 const RouterApp = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="home" element={<Home />} />
-        {/* <Route path="expenses" element={<Expenses />} />
-        <Route path="invoices" element={<Invoices />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/favorite" element={<Favorite />} />
+      <Route path="/details" element={<Details />} />
+    </Routes>
   );
 };
 

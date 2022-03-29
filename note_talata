@@ -29,6 +29,9 @@ affichage_liste:
 use_memo:
     manatsara ny performantion ny application
     tsy averiny rederena ilay izy
+
+provider:
+    tous ce qui est récuperation de donnée
     
         
 
