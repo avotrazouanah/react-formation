@@ -1,9 +1,9 @@
-import '@/styles/Navigation.css';
-import React from 'react';
+import '@/styles/navbar.css';
+import React, { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 import routes from '@/router/routes';
 
-const Navigation = () => {
+const Navbar: FC = () => {
   return (
     <div className="navigation topnav">
       <NavLink to={routes.HOME}>Home</NavLink>
@@ -13,4 +13,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Navbar;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Navigation from './common/Navigation/Navigation';
+import Navigation from './common/Navbar/Navbar';
 import Router from './router/Router';
 
 const App = () => {

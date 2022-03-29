@@ -1,7 +1,10 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import '@/styles/home.css';
+import React, { FC, useEffect, useState } from 'react';
+import CharacterItem from '@/common/CharacterItem';
 import { getCharacters } from '@/services/api';
+import { CharacterIf } from '@/types/types';
 
-const Home = () => {
+const Home: FC = () => {
   const [data, setData] = useState<any>([]);
 
   useEffect(() => {
@@ -11,33 +14,15 @@ const Home = () => {
       })
       .catch((e) => alert(e));
   }, []);
-  console.log(data);
-  // get All character
-  // const [characters, setCharacters] = useState([]);
-
-  // const fetchCharacters = useCallback(async () => {
-  //   try {
-  //     const result = await getCharacters();
-  //     setCharacters(result);
-  //   } catch (e) {
-  //     console.log(e);
-  //     alert('Erreur de récupération des listes des personnage');
-  //   }
-  // }, []); // eslint-disable-line
-
-  // useEffect(() => {
-  //   fetchCharacters();
-  // }, [fetchCharacters]);
 
   return (
     <div className="home">
-      <p>home</p>
-      <ul>
-        {data.map((item: any, index: any) => (
+      <div className="characters">
+        {data.map((item: CharacterIf, index: number) => (
           // eslint-disable-next-line react/no-array-index-key
-          <li key={index}>{item.name}</li>
+          <CharacterItem character={item} key={index} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

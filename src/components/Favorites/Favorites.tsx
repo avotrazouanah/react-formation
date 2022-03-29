@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Favorites = () => {
+const Favorites: FC = () => {
   return (
     <div className="favorite">
       <p>Favorite Page</p>
