@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Details = () => {
+const Characters = () => {
   return (
     <div className="Details">
-      <p>details</p>
+      <p>Characters</p>
     </div>
   );
 };
 
-export default Details;
+export default Characters;

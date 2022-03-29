@@ -32,6 +32,14 @@ use_memo:
 
 provider:
     tous ce qui est récuperation de donnée
+
+atao anaty variable d'environement ny endpoint:
+    creation fichier:
+        .env: 
+            tsy maintsy manomboka amin'ny REACT_APP
+            process.env
+            
+
     
         
 

@@ -4,11 +4,10 @@ module.exports = {
     es6: true,
   },
   extends: [
-    // bonne pratique propose par eslint
+    // bonne pratique
     'eslint:recommended',
-    // bonne pratique propose par eslint
     'plugin:@typescript-eslint/recommended',
-    // norme codage
+    // norme de codage
     'airbnb',
     'airbnb/hooks',
     'plugin:prettier/recommended',

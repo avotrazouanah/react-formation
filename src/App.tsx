@@ -3,14 +3,14 @@ import axios from 'axios';
 import React, { useCallback, useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Navigation from './common/Navigation';
-import RouterApp from './router/RouterApp';
+import Router from './router/Router';
 
 const App = () => {
   return (
     <div className="app">
       <BrowserRouter>
         <Navigation />
-        <RouterApp />
+        <Router />
       </BrowserRouter>
     </div>
   );

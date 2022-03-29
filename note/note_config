@@ -16,3 +16,16 @@ useMemo: https://grafikart.fr/tutoriels/react-hook-usememo-1330
 dev_oriente_composant:
 
 react tutorial: https://www.w3schools.com/react/default.asp
+
+creation craco: npm i craco
+  configure craco.config.js
+  const path = require("path");
+  module.exports = {
+      webpack: {
+          alias: { '@': path.resolve(__dirname, './src') },
+      },
+  }
+
+tsconfig.json:
+  "baseUrl": ".",
+  "paths": {"@/":["./src/"]},
