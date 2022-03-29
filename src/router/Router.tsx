@@ -4,7 +4,7 @@ import Characters from '../components/Characters/Characters';
 import Favorites from '../components/Favorites/Favorites';
 import Home from '../components/Home/Home';
 import NotFound from '../components/NotFound/NotFound';
-import { routes } from './routes';
+import routes from './routes';
 
 const Router = () => {
   return (

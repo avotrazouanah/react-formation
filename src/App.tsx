@@ -1,8 +1,6 @@
-import './styles/App.css';
-import axios from 'axios';
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Navigation from './common/Navigation';
+import Navigation from './common/Navigation/Navigation';
 import Router from './router/Router';
 
 const App = () => {

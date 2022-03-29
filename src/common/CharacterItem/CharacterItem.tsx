@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Character_item = () => {
+const CharacterItem = () => {
   return (
     <div className="character_item">
       <p>character_item</p>
@@ -8,4 +8,4 @@ const Character_item = () => {
   );
 };
 
-export default Character_item;
+export default CharacterItem;
