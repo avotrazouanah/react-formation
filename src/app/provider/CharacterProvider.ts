@@ -1,8 +1,8 @@
 import Axios from 'axios';
 
-export const BASE_URL = 'http://hp-api.herokuapp.com/api/characters';
+const CHARACTER_URL = 'http://hp-api.herokuapp.com/api/characters';
 
-const axios = Axios.create({ baseURL: BASE_URL });
+const axios = Axios.create({ baseURL: CHARACTER_URL });
 const options = {
   headers: {
     Accept: 'application/json',
@@ -10,15 +10,13 @@ const options = {
 };
 
 const handleError = async (result: any) => {
-  if (result.data.status === 'success') {
+  if (result.status === 200) {
     return result.data;
   }
-  console.log(result.data.error);
   throw Error(result.data.error);
 };
 
-export const getCharacters = async (url: string) => {
-  const result = await axios.get(url, options);
-  console.log(handleError(result));
+export const getCharacters = async () => {
+  const result = await axios.get(CHARACTER_URL, options);
   return handleError(result);
 };

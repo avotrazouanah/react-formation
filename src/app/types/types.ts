@@ -1,4 +1,4 @@
-export const character = {
+export const Character = {
   name: String,
   species: String,
   gender: String,
