@@ -7,14 +7,17 @@ import { BASE_URL, getCharacters } from './provider/CharacterProvider';
 import RouterApp from './router/RouterApp';
 
 const App = () => {
-  const a = () => {
-    axios.get('http://hp-api.herokuapp.com/api/characters').then((res) => {
-      const persons = res.data;
-      console.log(persons);
-      // this.setState({ persons });
-    });
-  };
-  a();
+  // const [char]
+
+  // const a = () => {
+  //   axios.get('http://hp-api.herokuapp.com/api/characters').then((res) => {
+  //     const persons = res.data;
+  //     console.log(persons);
+  //     // this.setState({ persons });
+  //   });
+  // };
+  // a();
+
   return (
     <div className="app">
       <BrowserRouter>
