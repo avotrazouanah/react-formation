@@ -1,9 +1,9 @@
 config_file: .eslintrc.js
-  .prettierrc.js
-  .vscode/settings.json
+.prettierrc.js
+.vscode / settings.json
 
 install pluggin: EsLint
-  Prettier
+Prettier
 
 api: https://hp-api.herokuapp.com/
 
@@ -18,14 +18,24 @@ dev_oriente_composant:
 react tutorial: https://www.w3schools.com/react/default.asp
 
 creation craco: npm i craco
-  configure craco.config.js
-  const path = require("path");
-  module.exports = {
-      webpack: {
-          alias: { '@': path.resolve(__dirname, './src') },
-      },
-  }
+configure craco.config.js
+const path = require("path");
+module.exports = {
+webpack: {
+alias: { '@': path.resolve(\_\_dirname, './src') },
+},
+}
 
 tsconfig.json:
-  "baseUrl": ".",
-  "paths": {"@/":["./src/"]},
+"baseUrl": ".",
+"paths": { "@/": ["./src/"] },
+
+utilisation boucle map:
+https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+
+utilisation boucle reduce:
+https://www.wenovio.com/2017/04/11/javascript-manipuler-vos-donnees-map-filter-reduce/
+
+find(): recherche dans une valeur dans array
+
+filter(): filter une valeur

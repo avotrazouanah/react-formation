@@ -27,4 +27,5 @@ export interface PropsCharacterItemIf {
   character: CharacterIf;
   isFavoritePage: boolean;
   key: number;
+  setData: any;
 }

@@ -16,9 +16,7 @@ const setFavorite = (favorites: CharacterIf[]) => {
 
 export const addFavorite = (character: CharacterIf) => {
   const favorites: CharacterIf[] = getFavorites();
-  console.log(favorites.filter((row) => row.actor === character.actor)[0]);
-  if (favorites.filter((row) => row.actor === character.actor).length === 0)
-    favorites.push(character);
+  if (!favorites.find((row) => row.actor === character.actor)) favorites.push(character);
   setFavorite(favorites);
 };
 

@@ -12,7 +12,7 @@ const Home: FC = () => {
       .then((dataApi: CharacterIf[]) => {
         const tmp: CharacterIf[] = dataApi;
         tmp.length = 5;
-        // dataF.length = 10;
+        // dataF.length = 10;1
         setData(tmp);
       })
       .catch((e) => alert(e));
@@ -23,7 +23,7 @@ const Home: FC = () => {
       <div className="characters">
         {data.map((item: CharacterIf, index: number) => (
           // eslint-disable-next-line react/no-array-index-key
-          <CharacterItem character={item} key={index} isFavoritePage={false} />
+          <CharacterItem character={item} key={index} isFavoritePage={false} setData={setData} />
         ))}
       </div>
     </div>

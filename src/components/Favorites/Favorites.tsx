@@ -15,7 +15,7 @@ const Favorites: FC = () => {
       <div className="characters">
         {data.map((item: CharacterIf, index: number) => (
           // eslint-disable-next-line react/no-array-index-key
-          <CharacterItem character={item} key={index} isFavoritePage={true} />
+          <CharacterItem character={item} key={index} isFavoritePage={true} setData={setData} />
         ))}
       </div>
     </div>
