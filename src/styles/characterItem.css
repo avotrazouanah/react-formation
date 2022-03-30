@@ -20,3 +20,12 @@
 .container {
   padding: 2px 16px;
 }
+
+.actor:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.favorites {
+  margin-bottom: 10px;
+}

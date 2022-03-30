@@ -25,5 +25,6 @@ export interface CharacterIf {
 
 export interface PropsCharacterItemIf {
   character: CharacterIf;
+  isFavoritePage: boolean;
   key: number;
 }

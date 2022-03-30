@@ -1,9 +1,38 @@
 import '@/styles/characterItem.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PropsCharacterItemIf } from '@/types/types';
+import {
+  addFavorite,
+  getFavorites,
+  removeFavorite,
+  setSingleCharacter,
+} from '@/utils/StorageService';
 
 const CharacterItem = (props: PropsCharacterItemIf) => {
-  const { character } = props;
+  const { character, isFavoritePage } = props;
+  const [isFavorite, setIsFavorite] = useState(false);
+  const navigate = useNavigate();
+
+  const add_favorite = () => {
+    addFavorite(character);
+    setIsFavorite(getFavorites().filter((row) => row.actor === character.actor).length > 0);
+  };
+
+  const remove_favorite = () => {
+    removeFavorite(character);
+    // setIsFavorite(getFavorites().filter((row) => row.actor === character.actor).length > 0);
+  };
+
+  const single_character = () => {
+    setSingleCharacter(character);
+    navigate('/characters');
+  };
+
+  useEffect(() => {
+    setIsFavorite(getFavorites().filter((row) => row.actor === character.actor).length > 0);
+  }, [character]);
+
   return (
     <div className="character_item card">
       <div className="img">
@@ -16,10 +45,32 @@ const CharacterItem = (props: PropsCharacterItemIf) => {
         />
       </div>
       <div className="container">
-        <h4>
+        <h4 className="actor" onClick={single_character} aria-hidden="true">
           <b>{character.actor}</b>
         </h4>
         <p>{character.name}</p>
+        {!isFavorite && (
+          <button
+            type="button"
+            className="favorites"
+            onClick={() => {
+              add_favorite();
+            }}
+          >
+            favorites
+          </button>
+        )}
+        {isFavoritePage && (
+          <button
+            type="button"
+            className="favorites"
+            onClick={() => {
+              remove_favorite();
+            }}
+          >
+            remove favorite
+          </button>
+        )}
       </div>
     </div>
   );
