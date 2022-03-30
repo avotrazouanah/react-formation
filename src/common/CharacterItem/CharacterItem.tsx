@@ -27,12 +27,13 @@ const CharacterItem = (props: PropsCharacterItemIf) => {
 
   const single_character = () => {
     setSingleCharacter(character);
-    navigate(routes.CHARACTER);
+    // navigate(routes.CHARACTER);
   };
 
   useEffect(() => {
     setIsFavorite(getFavorites().filter((row) => row.actor === character.actor).length > 0);
-  }, [character]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="character_item">

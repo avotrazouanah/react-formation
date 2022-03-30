@@ -8,7 +8,7 @@ const Favorites: FC = () => {
 
   useEffect(() => {
     setData(getFavorites());
-  }, [data]);
+  }, []);
 
   return (
     <div className="home">

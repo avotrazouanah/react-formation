@@ -3,7 +3,6 @@ import React, { FC, useEffect, useState } from 'react';
 import CharacterItem from '@/common/CharacterItem';
 import { getCharacters } from '@/services/api';
 import { CharacterIf } from '@/types/types';
-import { addFavorite, getFavorites, removeFavorite } from '@/utils/StorageService';
 
 const Home: FC = () => {
   const [data, setData] = useState<any>([]);
