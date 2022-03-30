@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Characters from '../components/Characters/Characters';
+import Character from '../components/Character/Character';
 import Favorites from '../components/Favorites/Favorites';
 import Home from '../components/Home/Home';
 import NotFound from '../components/NotFound/NotFound';
@@ -10,7 +10,7 @@ const Router = () => {
   return (
     <Routes>
       <Route path={routes.HOME} element={<Home />} />
-      <Route path={routes.CHARACTER} element={<Characters />} />
+      <Route path={routes.CHARACTER} element={<Character />} />
       <Route path={routes.FAVORITES} element={<Favorites />} />
       <Route path="/" element={<Navigate to={routes.HOME} />} />
       <Route path="*" element={<NotFound />} />

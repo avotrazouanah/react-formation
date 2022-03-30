@@ -1,6 +1,6 @@
 const routes = {
   HOME: '/home',
-  CHARACTER: '/characters',
+  CHARACTER: '/character',
   FAVORITES: '/favorites',
 };
 export default routes;

@@ -1,6 +1,7 @@
 import '@/styles/characterItem.css';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { routes } from '@/router';
 import { PropsCharacterItemIf } from '@/types/types';
 import {
   addFavorite,
@@ -26,7 +27,7 @@ const CharacterItem = (props: PropsCharacterItemIf) => {
 
   const single_character = () => {
     setSingleCharacter(character);
-    navigate('/characters');
+    navigate(routes.CHARACTER);
   };
 
   useEffect(() => {
@@ -34,7 +35,7 @@ const CharacterItem = (props: PropsCharacterItemIf) => {
   }, [character]);
 
   return (
-    <div className="character_item card">
+    <div className="character_item">
       <div className="img">
         <img
           src={character.image}
@@ -49,29 +50,29 @@ const CharacterItem = (props: PropsCharacterItemIf) => {
           <b>{character.actor}</b>
         </h4>
         <p>{character.name}</p>
-        {!isFavorite && (
-          <button
-            type="button"
-            className="favorites"
-            onClick={() => {
-              add_favorite();
-            }}
-          >
-            favorites
-          </button>
-        )}
-        {isFavoritePage && (
-          <button
-            type="button"
-            className="favorites"
-            onClick={() => {
-              remove_favorite();
-            }}
-          >
-            remove favorite
-          </button>
-        )}
       </div>
+      {!isFavorite && (
+        <button
+          type="button"
+          className="favorites"
+          onClick={() => {
+            add_favorite();
+          }}
+        >
+          favorites
+        </button>
+      )}
+      {isFavoritePage && (
+        <button
+          type="button"
+          className="favorites"
+          onClick={() => {
+            remove_favorite();
+          }}
+        >
+          remove favorite
+        </button>
+      )}
     </div>
   );
 };
